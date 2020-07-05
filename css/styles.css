@@ -2,13 +2,21 @@
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
 }
+body {
+  background-color: #ffffff;
+  font-family: var(--main-font);
+  font-size: 14px;
+  color: #212121;
+}
 .link {
   text-decoration: none;
 }
 .list {
   list-style: none;
 }
+
 /*Header*/
+
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -19,6 +27,7 @@
 .navigation-list-link,
 .navigation-contacts-list-link {
   font-family: var(--main-font);
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4px;
@@ -36,4 +45,27 @@
 .navigation-contacts-list-link:hover,
 .navigation-contacts-list-link:focus {
   color: #2196f3;
+}
+
+/*Hero Section*/
+
+.hero-title {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  /*color: #ffffff;*/
+}
+.modal-btn {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
 }
