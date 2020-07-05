@@ -1,12 +1,15 @@
 :root {
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
+  --main-color-text: #757575;
+  --secondary-color-text: #212121;
+  --accent-color: #2196f3;
 }
 body {
   background-color: #ffffff;
   font-family: var(--main-font);
   font-size: 14px;
-  color: #212121;
+  color: var(--secondary-color-text);
 }
 .link {
   text-decoration: none;
@@ -23,6 +26,10 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: #000000;
+}
+.logo-part {
+  color: var(--accent-color);
 }
 .navigation-list-link,
 .navigation-contacts-list-link {
@@ -35,16 +42,16 @@ body {
   text-decoration: none;
 }
 .navigation-list-link {
-  color: #212121;
+  color: var(--secondary-color-text);
 }
 .navigation-contacts-list-link {
-  color: #757575;
+  color: var(--main-color-text);
 }
 .navigation-list-link:hover,
 .navigation-list-link:focus,
 .navigation-contacts-list-link:hover,
 .navigation-contacts-list-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /*Hero Section*/
@@ -61,11 +68,40 @@ body {
 }
 .modal-btn {
   font-family: var(--main-font);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
+}
+
+/*About us*/
+
+.about-us-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-color-text);
+}
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-color-text);
+}
+
+/*what we do*/
+
+.heading-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color-text);
 }
