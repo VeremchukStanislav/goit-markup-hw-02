@@ -3,6 +3,7 @@
   --secondary-font: "Raleway", sans-serif;
   --main-color-text: #757575;
   --secondary-color-text: #212121;
+  --third-color-text: #ffffff;
   --accent-color: #2196f3;
 }
 body {
@@ -64,7 +65,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /*color: #ffffff;*/
+  /*color: var(--third-color-text);*/
 }
 .modal-btn {
   font-family: var(--main-font);
@@ -73,7 +74,7 @@ body {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--third-color-text);
   background-color: var(--accent-color);
 }
 
@@ -104,4 +105,39 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color-text);
+}
+.what-we-do-description {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /*color: var(--third-color-text);*/
+}
+
+/*Team*/
+
+.teamate-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color-text);
+}
+.teamate-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color-text);
+}
+.team-list-social-item-link {
+  background-color: #ffffff;
+}
+.team-list-social-item-link:hover,
+.team-list-social-item-link:focus {
+  background-color: var(--accent-color);
 }
