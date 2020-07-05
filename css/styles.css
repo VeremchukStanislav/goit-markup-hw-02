@@ -12,6 +12,9 @@ body {
   font-size: 14px;
   color: var(--secondary-color-text);
 }
+
+/*index.html*/
+
 .link {
   text-decoration: none;
 }
@@ -135,9 +138,44 @@ body {
   color: var(--main-color-text);
 }
 .team-list-social-item-link {
-  background-color: #ffffff;
+  background-color: var(--third-color-text);
 }
 .team-list-social-item-link:hover,
 .team-list-social-item-link:focus {
   background-color: var(--accent-color);
 }
+
+/*Clients*/
+
+.clients-list-item-link {
+  background-color: var(--third-color-text);
+}
+.clients-list-item-link:hover,
+.clients-list-item-link:focus {
+  background-color: var(--accent-color);
+}
+
+/*Footer*/
+
+/*.logo-part2 {
+  color: var(--third-color-text);
+}*/
+.footer-list-item-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  /*color: var(--third-color-text);*/
+  text-decoration: none;
+}
+.footer-list-item-link2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  /*color: rgba(255, 255, 255, 0.6);*/
+}
+
+/*portfolio.html*/
