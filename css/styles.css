@@ -8,6 +8,7 @@
 }
 body {
   background-color: #ffffff;
+  font-style: normal;
   font-family: var(--main-font);
   font-size: 14px;
   color: var(--secondary-color-text);
@@ -179,3 +180,38 @@ body {
 }
 
 /*portfolio.html*/
+
+.btn-list-item-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color-text);
+  background-color: #f5f4fa;
+}
+.btn-list-item-button:hover,
+.btn-list-item-button:focus {
+  background-color: var(--accent-color);
+}
+.projects-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-color-text);
+}
+.projects-title-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-color-text);
+}
+.projects-title-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  /*color: var(--third-color-text);*/
+}
