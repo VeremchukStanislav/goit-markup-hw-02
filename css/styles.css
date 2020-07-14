@@ -18,13 +18,45 @@ body {
 
 .link {
   text-decoration: none;
+  display: block;
 }
 .list {
   list-style: none;
 }
 
+.header-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*Header*/
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation-list {
+  display: flex;
+  padding-left: 0px;
+}
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.navigation-contacts {
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+}
+.navigation-contacts-list:not(:last-child) {
+  margin-right: 50px;
+}
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -32,6 +64,9 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+  margin-right: 85px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo-part {
   color: var(--accent-color);
@@ -45,6 +80,8 @@ body {
   line-height: 1.4px;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .navigation-list-link {
   color: var(--secondary-color-text);
@@ -80,6 +117,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--third-color-text);
   background-color: var(--accent-color);
+  border-radius: 4px;
 }
 
 /*About us*/
