@@ -5,9 +5,12 @@
   --secondary-color-text: #212121;
   --third-color-text: #ffffff;
   --accent-color: #2196f3;
+  --background-color: #ffffff;
+  --background-secondary-color: #f5f4fa;
+  --background-footer-color: #2f303a;
 }
 body {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   font-style: normal;
   font-family: var(--main-font);
   font-size: 14px;
@@ -30,6 +33,15 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*Header*/
@@ -98,7 +110,18 @@ body {
 
 /*Hero Section*/
 
+.hero-container {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .hero-title {
+  margin-bottom: 30px;
   font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
@@ -109,6 +132,10 @@ body {
   /*color: var(--third-color-text);*/
 }
 .modal-btn {
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
@@ -118,10 +145,18 @@ body {
   color: var(--third-color-text);
   background-color: var(--accent-color);
   border-radius: 4px;
+  cursor: pointer;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #188ce8;
 }
 
 /*About us*/
 
+.about-us-list-item-img {
+  background-color: var(--background-secondary-color);
+}
 .about-us-title {
   font-weight: 700;
   font-size: 14px;
