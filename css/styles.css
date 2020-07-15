@@ -27,13 +27,6 @@ body {
   list-style: none;
 }
 
-.header-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
 h1,
 h2,
 h3,
@@ -49,6 +42,11 @@ h6 {
 .header-container {
   display: flex;
   justify-content: space-between;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .navigation {
   display: flex;
@@ -109,7 +107,9 @@ h6 {
 }
 
 /*Hero Section*/
-
+.hero {
+  background-color: rgba(47, 48, 58, 0.8);
+}
 .hero-container {
   text-align: center;
   padding-top: 200px;
@@ -129,7 +129,7 @@ h6 {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /*color: var(--third-color-text);*/
+  color: var(--third-color-text);
 }
 .modal-btn {
   padding-top: 10px;
@@ -146,6 +146,8 @@ h6 {
   background-color: var(--accent-color);
   border-radius: 4px;
   cursor: pointer;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -154,7 +156,11 @@ h6 {
 
 /*About us*/
 
-.about-us-container {
+.about-us {
+  padding-top: 94px;
+}
+
+.about-us {
   margin-bottom: 94px;
   text-align: center;
   width: 1200px;
@@ -198,7 +204,7 @@ h6 {
 
 /*what we do*/
 
-.what-we-do-container {
+.what-we-do {
   margin-bottom: 94px;
   text-align: center;
   width: 1200px;
@@ -237,7 +243,62 @@ h6 {
 
 /*Team*/
 
+.team {
+  background-color: var(--background-secondary-color);
+}
+.team-container {
+  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-list-teamate-img {
+  display: block;
+  margin-bottom: 30px;
+}
+.team-list-social {
+  display: flex;
+}
+.team-list-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.team-list {
+  display: flex;
+}
+.team-list-item1 {
+  margin-right: 30px;
+  background-color: var(--background-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list-item2 {
+  margin-right: 51px;
+  background-color: var(--background-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list-item3 {
+  margin-right: 9px;
+  background-color: var(--background-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list-item4 {
+  background-color: var(--background-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
 .teamate-name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -246,6 +307,7 @@ h6 {
   color: var(--secondary-color-text);
 }
 .teamate-position {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -263,8 +325,25 @@ h6 {
 
 /*Clients*/
 
+.clients-list {
+  display: flex;
+}
+.clients-list-item:not(:last-child) {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
 .clients-list-item-link {
   background-color: var(--third-color-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  width: 170px;
+  height: 90px;
 }
 .clients-list-item-link:hover,
 .clients-list-item-link:focus {
