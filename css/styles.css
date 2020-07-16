@@ -19,12 +19,23 @@ body {
 
 /*index.html*/
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 .link {
   text-decoration: none;
   display: block;
 }
 .list {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 h1,
@@ -269,6 +280,12 @@ h6 {
 }
 .team-list {
   display: flex;
+  justify-content: space-between;
+}
+.team-list-social {
+  padding-right: 32px;
+  padding-bottom: 24px;
+  padding-left: 32px;
 }
 .team-list-item1 {
   margin-right: 30px;
@@ -322,9 +339,26 @@ h6 {
 .team-list-social-item-link:focus {
   background-color: var(--accent-color);
 }
+.team-list-social-img {
+  display: block;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+}
 
 /*Clients*/
 
+.ourclients {
+  padding-bottom: 92px;
+}
+.ourclients-container {
+  text-align: center;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .clients-list {
   display: flex;
 }
@@ -354,7 +388,28 @@ h6 {
 .footer {
   background-color: var(--background-footer-color);
 }
-
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footer-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.logo-footer {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
 .logo-part2 {
   color: var(--third-color-text);
 }
@@ -364,7 +419,7 @@ h6 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--third-color-text);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 .footer-list-item-link2 {
@@ -374,6 +429,28 @@ h6 {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.join-in-item-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.join-in {
+  color: var(--background-color);
+  margin-bottom: 20px;
+}
+.mail-form {
+  color: var(--background-color);
+}
+.footer-list {
+  padding-bottom: 60px;
+}
+.footer-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.join-in-list {
+  display: flex;
+}
+.join-in-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /*portfolio.html*/
