@@ -50,6 +50,9 @@ h6 {
 
 /*Header*/
 
+.header {
+  border: 1px solid #ececec;
+}
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -455,20 +458,47 @@ h6 {
 
 /*portfolio.html*/
 
+.main-container {
+  padding-top: 93px;
+  padding-bottom: 94px;
+}
+.btn-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.btn-list-item:not(:last-child) {
+  margin-right: 8px;
+}
 .btn-list-item-button {
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color-text);
-  background-color: #f5f4fa;
+  background-color: var(--background-secondary-color);
+  border-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .btn-list-item-button:hover,
 .btn-list-item-button:focus {
   background-color: var(--accent-color);
 }
 .projects-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -476,6 +506,7 @@ h6 {
   color: var(--secondary-color-text);
 }
 .projects-title-name {
+  margin: 0px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
@@ -483,9 +514,42 @@ h6 {
   color: var(--main-color-text);
 }
 .projects-title-description {
+  margin: 0px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   /*color: var(--third-color-text);*/
+}
+.portfolio-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects-list-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.projects-list-item:hover,
+.projects-list-item:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+.projects-list-item:nth-child(3n) {
+  margin-right: 0px;
+}
+.img-info {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
