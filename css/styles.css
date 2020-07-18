@@ -264,7 +264,6 @@ p {
   background-color: var(--background-secondary-color);
 }
 .team-container {
-  margin-bottom: 94px;
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
@@ -338,6 +337,7 @@ p {
   padding-bottom: 92px;
 }
 .ourclients-container {
+  padding-top: 94px;
   text-align: center;
   width: 1200px;
   padding-left: 15px;
