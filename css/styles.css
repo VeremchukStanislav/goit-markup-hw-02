@@ -22,7 +22,6 @@ body {
 html {
   box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
@@ -175,7 +174,7 @@ h6 {
   padding-bottom: 94px;
 }
 
-.about-us {
+.about-us-container {
   text-align: center;
   width: 1200px;
   padding-left: 15px;
@@ -190,12 +189,14 @@ h6 {
   margin-right: 30px;
 }
 .about-us-list-item-img {
-  margin-bottom: 30px;
+  display: block;
   padding-top: 25px;
   padding-right: 100px;
   padding-bottom: 25px;
   padding-left: 100px;
-  border-radius: 4px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
   background-color: var(--background-secondary-color);
 }
 .about-us-title {
